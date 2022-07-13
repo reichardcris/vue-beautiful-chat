@@ -50,7 +50,7 @@
       />
       <div v-else-if="message.type === 'typing'" >
         <TypingMessage :message-colors="messageColors" />
-        <p>John Is typing</p>
+        <p style="color: #000;">John Is typing...</p>
       </div>
       <SystemMessage
         v-else-if="message.type === 'system'"
