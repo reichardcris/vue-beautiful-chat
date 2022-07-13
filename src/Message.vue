@@ -48,10 +48,6 @@
         :data="message.data"
         :message-colors="messageColors"
       />
-      <div v-else-if="message.type === 'typing'" >
-        <TypingMessage :message-colors="messageColors" />
-        <p style="color: #000;">John Is typing...</p>
-      </div>
       <SystemMessage
         v-else-if="message.type === 'system'"
         :data="message.data"
